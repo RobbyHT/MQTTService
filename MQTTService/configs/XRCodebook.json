@@ -1,0 +1,223 @@
+{
+  "HLARootObject": {
+    "Attribute": {
+      "HLAprivilegeToDeleteObject": {
+        "DataType": "NA",
+        "PubSub": "N"
+      }
+    },
+    "PubSub": "N",
+    "SubClass": {
+      "CkptSet": {
+        "Attribute": {
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "get this user all the operation check point for a specified little unit."
+      },
+      "Disaster": {
+        "Attribute": {
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "upload the disaster."
+      },
+      "DisasterList": {
+        "Attribute": {
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "get this user all the operation disasters for a specified little unit."
+      },
+      "Score": {
+        "Attribute": {
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "upload the score"
+      },
+      "ScoreList": {
+        "Attribute": {
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "get this user all the little unit operation score for a specified course unit."
+      },
+      "UnitCkpt": {
+        "Attribute": {
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "upload the checkpoint"
+      },
+      "UserData": {
+        "Attribute": {
+          "ID": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Account": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Email": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "PerID": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Name": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Gender": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Birth": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Industry": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Company": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Department": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "JobTitle": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Telephone": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "get this user info data."
+      },
+      "OperationHistroy": {
+        "Attribute": {
+          "UnitCode": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Date": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "get this user all the operation record."
+      },
+      "AttendedList": {
+        "Attribute": {
+          "SimType": {
+            "PubSub": "PS",
+            "DataType": "string"
+          },
+          "Data": {
+            "PubSub": "PS",
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "get the list of attended trainee."
+      }
+    }
+  },
+  "HLARootInteraction": {
+    "SubClass": {
+      "UpdateAttendedState": {
+        "Parameter": {
+          "SimType": {
+            "DataType": "string"
+          },
+          "Data": {
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "Stop:0, Start:1"
+      },
+      "GetAttendedList": {
+        "Parameter": {
+          "Data": {
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "Scaffold:SF, AerialPlaform:HA, ConfinedSpace:SW, Chemical:GC"
+      },
+      "GetScoreList": {
+        "Parameter": {
+          "Data": {
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "pass value to search this user all the little unit operation score for a specified course unit."
+      },
+      "GetDisasterList": {
+        "Parameter": {
+          "Data": {
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "pass value to search this user all the operation disasters for a specified little unit."
+      },
+      "GetCkptSet": {
+        "Parameter": {
+          "Data": {
+            "DataType": "string"
+          }
+        },
+        "PubSub": "PS",
+        "SubClass": {},
+        "_comment": "pass value to search this user all the operation check point for a specified little unit."
+      }
+    },
+    "Parameter": {},
+    "PubSub": "N"
+  }
+}
